@@ -1,0 +1,29 @@
+body{
+  margin: 0;
+  font-family: "Georgia", serif;
+  font-size: 18px;
+  color: black;
+}
+header{
+  display: flex;
+  position: fixed;
+  background-color: black;
+  color: white;
+  /* margin-top: 0; */
+  width: 1600px;
+  height: 70px;
+  margin-top: 0;
+}
+header span{
+
+}
+.banner{
+  display: flex;
+  background-image: url("../../resources/images/moto.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  height: 500;
+  width: 100%;
+  padding-top: 70px;
+}
