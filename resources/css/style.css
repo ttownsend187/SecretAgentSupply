@@ -39,12 +39,15 @@ html, body{
   margin: auto;
   height: 25rem;
   width: 100%;
+
+  /* padding-top: 9rem; */
+  /* padding-left: 3rem; */
   /* padding-top: 70px; */
 }
 .banner .container{
   background-color: black;
   height: 7.5rem;
   width: 20rem;
-  padding-top: 9rem;
-  padding-left: 3rem;
+  margin-top: 9rem;
+
 }
