@@ -1,53 +1,85 @@
 html, body{
-  margin: 0;
   font-family: "Helvetica", serif;
   font-size: 18px;
-  background-color: black;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 /* company name and logo */
 .company{
-  height: 2.82rem;
-  /* margin-top: 0; */
-  display: flex;
+  color:white;
   background-color: black;
 }
-.company .container{
-  width: 900px;
+.container{
+  max-width: 960px;
   margin: 0 auto;
-  display: inline-block;
-  padding-top: .66rem;
-  padding-bottom: .66rem;
-  /* background-color: blue; */
-  padding-left: .5rem;
 }
-.company .container span{
-  font-size: 1rem;
-  color: white;
-  padding-left: 1rem;
+
+.company .container{
+  display: flex;
+  padding: .66rem 0 .66rem 0.5rem;
+  background-color: blue;
 }
+
 .company .container img{
     height: 1.5rem;
-    padding left: 0.5rem;
+    padding-right: 1rem;
 }
 
 .banner{
-  display: flex;
   background-image: url("../../resources/images/moto.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  margin: auto;
+  background-position: center;
   height: 25rem;
-  width: 100%;
-
-  /* padding-top: 9rem; */
-  /* padding-left: 3rem; */
-  /* padding-top: 70px; */
+  /* margin: 0 auto; */
 }
-.banner .container{
-  background-color: black;
-  height: 7.5rem;
-  width: 20rem;
-  margin-top: 9rem;
 
+.headline {
+  position: relative;
+  top: 9rem;
+  width: 20rem;
+  padding: 2rem 3rem;
+  background-color: black;
+  color: white;
+}
+h1, h4{
+  font-weight: bold;
+}
+.headline h1{
+  margin: .25rem 0;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+
+/* Navigation Bar */
+
+nav {
+
+  background-color: firebrick;
+  color: white;
+
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .75rem 0;
+}
+.mobile-nav{
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  nav ul{
+    display: none;
+  }
+  .mobile-nav{
+    display: block;
+    text-align: center;
+  }
 }
